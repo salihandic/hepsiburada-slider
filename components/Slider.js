@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 
+import ColorThief from "./scripts/ColorThief";
+
 /**
  * Slider bağımlılıkları
  */
