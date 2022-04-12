@@ -1,0 +1,328 @@
+.flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.column {
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+.row {
+    -webkit-box-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+.jc-betweeen {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.jc-center {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.a-center {
+    align-items: center;
+}
+.fl1 {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.sliderRoot {
+    --bg-color: #fff;
+    --text-color-primary: #484848;
+    width: 100%;
+    height: 540px;
+    position: relative;
+    background-color: var(--bg-color);
+    overflow: hidden;
+}
+.br10 {
+    -webkit-border-radius: 10px;
+    -ms-webkit-radius: 10px;
+    border-radius: 10px;
+}
+
+.w100 {
+    width: 100%;
+}
+.h100 {
+    height: 100%;
+}
+.s-left {
+    padding: 48px;
+    position: relative;
+}
+.s-head {
+    min-height: 152px;
+}
+.s-head-title, .s-head-title-2 {
+    margin-top: 8px;
+    line-height: 1.33;
+    max-height: 100px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -moz-line-clamp: 2;
+    box-orient: vertical;
+    -webkit-box-orient: vertical;
+}
+.s-head-title {
+    font-size: 24px;
+}
+.s-head-title-2 {
+    font-size: 32px;
+    font-weight: 600;
+}
+.btn-slider {
+    margin-top: 24px;
+    border-radius: 24px;
+    -moz-border-radius: 24px;
+    -o-border-radius: 24px;
+    -webkit-border-radius: 24px;
+    -ms-webkit-radius: 24px;
+    zoom: 1;
+    margin-right: auto;
+    min-width: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #ff6000;
+}
+.btn-text {
+    font-size: 14px;
+    border-radius: 24px;
+    -moz-border-radius: 24px;
+    -o-border-radius: 24px;
+    -webkit-border-radius: 24px;
+    -ms-webkit-radius: 24px;
+    zoom: 1;
+    font-weight: 600;
+    color: #fff;
+    line-height: 1.14;
+    margin: 0 auto;
+    padding: 12px 24px;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 300px;
+    white-space: nowrap;
+}
+.s-right {
+    padding: 4px;
+    width: 680px;
+    min-width: 680px;
+}
+.s-img-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.s-img-pdt  {
+    position: relative;
+    display: flex;
+    padding-top: 56.25%;
+}
+.img-item {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    width: 100%;
+}
+.img-item>:only-child {
+    height: 100%;
+}
+.s-slider {
+    position: relative;
+    z-index: 1;
+    -webkit-box-shadow: 0 6px 26px 0 rgb(0 0 0 / 16%);
+    box-shadow: 0 6px 26px rgb(0 0 0 / 16%);
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff
+}
+.s-conteiner {
+    max-width: 1088px;
+    margin: 0 auto;
+}
+.s-content {
+    width: 100%;
+    height: 540px;
+    position: relative;
+    background-color: #ececec;
+    overflow: hidden;
+}
+.s-slider-item {
+    transition: all 0.3s ease-out;
+    flex-wrap: nowrap;
+    width: 100%;
+    flex-shrink: 1;
+    flex: 1 0 100%;
+}
+.s-slider-item:not(.Open) {
+    display: none;
+}
+
+/**/
+.s-thumb-content {
+    position: relative;
+    padding-bottom: 32px;
+    max-width: 1088px;
+    margin: 0 auto;
+    margin-top: 15px;
+    width: 100%;
+}
+.s-thumb-list {
+    margin: 0;
+    width: auto;
+}
+.s-thumb-item {
+    width: 64px;
+    min-width: 64px;
+    height: 48px;
+    zoom: 1;
+    border: 2px solid rgba(0,0,0,0);
+    margin: 0 5px;
+    overflow: hidden;
+}
+.s-item-btn {
+    width: 100%;
+    height: 42px;
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+.s-item-btn, .s-thumb-item {
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -o-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -ms-webkit-radius: 8px;
+}
+.s-thumb-img {
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    width: auto;
+    max-width: 72px;
+    margin-left: -7px;
+}
+.s-thumb-bg {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.s-prev-btn, .s-next-btn {
+    width: 56px;
+    height: 36px;
+    border-radius: 18px;
+    border: 2px solid #fff;
+    margin: 5px 0;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.s-prev-btn {
+    margin-right: 6px;
+}
+.s-next-btn {
+    margin-left: 6px;
+}
+li, ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.s-thumb-list {
+    margin: 0;
+    width: auto;
+    overflow: hidden;
+}
+.s-thumb-item {
+    display: flex;
+}
+
+.s-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-top: 18px;
+    padding-bottom: 13px;
+    width: 100%;
+}
+.s-header-item {
+    margin-left: 12px;
+    margin-right: 12px;
+}
+.s-header-btn {
+    padding: 8px 16px;
+    border: 2px solid rgba(0,0,0,0);
+    cursor: pointer;
+    -webkit-transition: all .2s ease 0s;
+    -o-transition: all .2s ease 0s;
+    transition: all .2s ease 0s;
+    display: block;
+    white-space: nowrap;
+    color: #484848;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+.s-header-btn.Open {
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    -o-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -ms-webkit-radius: 20px;
+    zoom: 1;
+    background-color: #fff;
+    position: relative;
+    cursor: pointer;
+    -webkit-box-shadow: 0 2px 4px 0 rgb(0 0 0 / 8%);
+    box-shadow: 0 2px 4px rgb(0 0 0 / 8%);
+}
+.slick-initialized .slick-slide {
+    display: flex;
+}
+.s-item-btn {
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+.s-item-btn.Open {
+    border-color: #fff;
+}
+.s-header-btn.Open:after {
+    content: "";
+    position: absolute;
+    left: calc(50% - 8px);
+    width: 0;
+    height: 0;
+    border-top: 8px solid #fff;
+    border-left: 8px solid rgba(0,0,0,0);
+    border-right: 8px solid rgba(0,0,0,0);
+    bottom: -6px;
+}
+.s-prev-icon, .s-next-icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15px;
+    height: 18px;
+}
