@@ -1,3 +1,4 @@
+import React from "react";
 
 export default function Header({ Content, Current, Color, Action }) {
     return Content.length && (

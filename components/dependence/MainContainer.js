@@ -1,3 +1,4 @@
+import React from "react";
 
 export default function MainContainer({ Content, Current, Color }) {
     return <div className="s-slider">

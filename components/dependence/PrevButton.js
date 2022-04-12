@@ -1,3 +1,4 @@
+import React from "react";
 
 export default function PrevButton(props) {
     return <div role="btn" className="s-prev-btn flex jc-center a-center" onClick={props.Action}>

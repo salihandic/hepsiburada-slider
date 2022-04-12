@@ -1,3 +1,4 @@
+import React from "react";
 
 export default function NextButton(props) {
     return <div role="btn" className="s-next-btn flex jc-center a-center" onClick={props.Action}>
